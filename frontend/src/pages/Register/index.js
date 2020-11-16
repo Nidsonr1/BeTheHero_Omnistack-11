@@ -54,19 +54,22 @@ export default function Register() {
           </Link>
         </section> 
 
-        <form onSubmit={handleRegister}>
+        <form id="content" onSubmit={handleRegister}>
           <input 
+            data-cy="name"
             placeholder="Nome da ONG" 
             value={name}
             onChange={e => setName(e.target.value)}  
           />
           <input 
+            data-cy="email"
             type="email" 
             placeholder="E-mail"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
           <input 
+            data-cy="whatsapp"
             placeholder="Whatsapp"
             value={whatsapp}
             onChange={e => setWhatsapp(e.target.value)}
@@ -74,11 +77,13 @@ export default function Register() {
 
           <div className="input-group">
             <input 
+              data-cy="city"
               placeholder="Cidade"
               alue={city}
               onChange={e => setCity(e.target.value)}
             />
             <input 
+              data-cy="uf"
               placeholder="UF" 
               style={{ width: 80 }} 
               alue={uf}
@@ -86,7 +91,7 @@ export default function Register() {
             />
           </div>
 
-          <button className="button" type="submit">Cadastrar</button>
+          <button data-cy="button-registerOng" className="button" type="submit">Cadastrar</button>
         </form>
       </div>
     </div>

@@ -37,11 +37,12 @@ export default function Logon() {
           <h1>Faça seu logon</h1>
 
           <input 
+            data-cy="input-id"
             placeholder="Sua ID"
             value={id}
             onChange={e => setId(e.target.value)}
           />
-          <button type="submit" className="button">Entrar</button>
+          <button data-cy="button-login" type="submit" className="button">Entrar</button>
 
           <Link className="back-link" to="/register">
             <FiLogIn size={16} color="#E02041" />

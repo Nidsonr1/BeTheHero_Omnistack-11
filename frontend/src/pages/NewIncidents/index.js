@@ -54,22 +54,25 @@ export default function NewIncident() {
 
         <form onSubmit={handleNewIncident}>
           <input 
+            data-cy="title"
             placeholder="Título do caso" 
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
           <textarea 
+            data-cy="description"
             placeholder="Descrição" 
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
           <input 
+            data-cy="value"
             placeholder="Valor em reais"
             value={value}
             onChange={e => setValue(e.target.value)}
           />
           
-          <button className="button" type="submit">Cadastrar</button>
+          <button data-cy="button-registerNewIncident" className="button" type="submit">Cadastrar</button>
         </form>
       </div>
     </div>
