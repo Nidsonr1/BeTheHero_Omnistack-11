@@ -1,0 +1,14 @@
+{
+  "name": "BeTheHero_Omnistack-11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nidsonr1/BeTheHero_Omnistack-11.git",
+  "author": "Nidsonr1 <nidsoncampos@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "dependencies": {
+    "cypress": "^9.5.0"
+  }
+}
